@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    /* Colors */
+    --white: #FFF;
+    --black: #000;
+    --gray: #838383;
+    --light-gray: #e7e7e7;
+    /* Fonts */
+    --primary-font: "Poppins", sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: var(--primary-font);
+    color: var(--black);
+    background-color: var(--white);
+    background-image: url(images/background-wave.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100dvh - 8rem);
+    padding: 2rem;
+}
+
+.login-container {
+    display: flex;
+    width: 1000px;
+    height: 700px;
+    padding: 1rem;
+    border-radius: 24px;
+}
+
+.login-container-left-side {
+    width: 50%;
+    color: var(--white);
+    border: 1rem solid var(--white);
+    border-radius: 24px;
+    position: relative;
+}
+
+.login-container-left-side-text {
+    width: 300px;
+    position: absolute;
+    left: 30px;
+    bottom: 50px;
+}
+
+.login-container-left-side-text h2 {
+    font-size: 3.7rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.login-container-left-side-text h3 {
+    font-size: .9rem;
+    font-weight: 500;
+    line-height: 1rem;
+}
+
+.login-container-right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 50%;
+    padding: 1rem;
+    background-color: var(--white);
+    border-radius: 0 24px 24px 0;
+    margin-left: -1.3rem;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 54px;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+}
+
+.login-container-right-side-text {
+    text-align: center;
+    margin-top: 7rem;
+}
+
+.login-container-right-side-text h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.login-container-right-side-text h4 {
+    color: var(--gray);
+    font-size: .9rem;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.login-email-field,
+.login-password-field {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.login-email-field input,
+.login-password-field input {
+    padding: 1rem;
+    background-color: var(--light-gray);
+    border: 1px solid transparent;
+    border-radius: 8px;
+}
+
+.remember-field input,
+.remember-field label {
+    cursor: pointer;
+}
+
+.additional-login-buttons a {
+    text-decoration: none;
+    color: var(--gray);
+    font-weight: 700;
+}
+
+.additional-login-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    font-size: .9rem;
+}
+
+.buttons-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.buttons-login button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 400px;
+    height: 40px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-sing-in {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.btn-sing-in-google {
+    background-color: var(--light-gray);
+    color: var(--black);
+}
+
+.btn-sing-in-google img {
+    width: 16px;
+}
+
+.sing-up-link {
+    position: absolute;
+    bottom: 30px;
+}
+
+.sing-up-link a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 700;
+}
+
+.credits {
+    color: var(--white);
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.credits a {
+    text-decoration: none;
+    font-weight: 600;
+    color: blue;
+}
